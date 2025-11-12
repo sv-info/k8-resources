@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: env-configmap
+  name: pod-config
   labels:
-    purpose: demo
-    project: roboshop
+    purpose: config
+    env: dev
 data:
-  COURSE: "devops"
-  DURATION: "120hr"
+  COURSE: "DevOps with AWS"
+  DURATION: "120HRS"
+  TRAINER: "SIVAKUMAR REDDY M"
