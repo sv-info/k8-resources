@@ -1,9 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: labels
   labels:
     purpose: demo
+    project: roboshop
+  annotations:
+    description: " this pod created to demo annotations"
 spec:
   containers:
   - name: nginx
