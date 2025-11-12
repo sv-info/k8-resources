@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: multi-containers
+  name: multi
   labels:
     project: roboshop
     environment: dev
@@ -11,3 +11,4 @@ spec:
     image: nginx
   - name: almalinux
     image: almalinux:9
+    command: ["sleep", "1000"]
